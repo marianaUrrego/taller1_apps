@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Ejemplo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <img src="img/logo-placeholder.png">
+    </div>
+    <div class="nav-buttons">
+      <div>
+        <button onclick="navegarASeccion('inicio')" class="nav-button-item activo" id="boton-inicio">INICIO</button>
+      </div>
+      <div>
+        <button onclick="navegarASeccion('proyectos')" class="nav-button-item" id="boton-proyectos">PROYECTOS</button>
+      </div>
+      <div>
+        <button onclick="navegarASeccion('productos')" class="nav-button-item" id="boton-productos">PRODUCTOS</button>
+      </div>
+      <div>
+        <button onclick="navegarASeccion('contacto')" class="nav-button-item" id="boton-contacto">CONTACTO</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="inicio">
+    <div class="hero-img-text">
+      <img id="hero-img" src="img/hero-section.png" alt="Imagen hero" />
+      <div class="hero-text">
+        <h1>Bienvenido a Mi Página</h1>
+        <p>Este es un sitio de ejemplo con varias secciones y un diseño sencillo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="proyectos" id="proyectos">
+    <h2>Proyectos</h2>
+    <p>Algunos de nuestros proyectos recientes:</p>
+    <div class="galeria">
+      <img src="https://picsum.photos/300/200?random=1" alt="Proyecto 1">
+      <img src="https://picsum.photos/300/200?random=2" alt="Proyecto 2">
+      <img src="https://picsum.photos/300/200?random=3" alt="Proyecto 3">
+      <img src="https://picsum.photos/300/200?random=4" alt="Proyecto 4">
+    </div>
+  </section>
+
+  <section class="productos" id="productos">
+    <div class="titulo-productos">
+      <h2>Productos</h2>
+      <p>Productos que ofrecemos como empresa</p>
+    </div>
+    <div class="productos-lista">
+      <div class="producto">
+        <h3>Producto A</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius.</p>
+      </div>
+      <div class="producto">
+        <h3>Producto B</h3>
+        <p>Phasellus euismod, justo at cursus dictum, urna erat laoreet enim, nec dictum.</p>
+      </div>
+      <div class="producto">
+        <h3>Producto C</h3>
+        <p>Morbi facilisis, sapien nec pulvinar dictum, enim erat cursus enim.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacto" id="contacto">
+    <h2>Contacto</h2>
+    <p>¿Tienes alguna pregunta? ¡Contáctanos!</p>
+    <form>
+      <input type="text" placeholder="Nombre" required>
+      <input type="email" placeholder="Correo electrónico" required>
+      <textarea placeholder="Mensaje" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html> 
